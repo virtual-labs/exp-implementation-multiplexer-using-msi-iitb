@@ -1,13 +1,70 @@
-<!DOCTYPE html>
+<!DocType html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
-
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+	<head>
+		<title> Digital Logic Design Simulator </title>
+		<link rel="stylesheet" href="css/Style.css">
+        <script src="js/Custom_Prompt.js" ></script>
+		<script src="js/Connection.js" ></script>
+        <script src="js/Control_Manager.js" ></script>
+		<script src="js/IC.js" ></script>
+        <script src="js/IC_Base.js"></script>
+        <script src="js/IC_Data/IC_List.js"></script>
+        <script src="js/Linked_List.js"></script>
+		<script src="js/LED.js" ></script>
+		<script src="js/LED_Port.js" ></script>
+		<script src="js/Pin.js" ></script>
+        <script src="js/Priority_Queue.js"></script>
+        <script src="js/Path_Finder.js"></script>
+        <script src="js/Seven_Segment_Display.js"></script>
+        <script src="js/Simulator.js"></script>
+        <script src="js/Switch.js"></script>
+        <script src="js/Tree.js"></script>
+        <script src="js/Timer_Port.js"></script>
+        <script src="js/Timing_Diagram.js"></script>
+        <script src="js/Vertex_Tree.js"></script>
+	</head>
+	<body onLoad="Load_Simulator(); Load_Exp_01();">
+		<div style="padding: 10px 40px;">
+			<h3> Inputs </h3>
+			<ul>
+				<li>Select Line C : I/P15</li>
+				<li>Select Line B : I/P14</li>
+				<li>Select Line A : I/P13</li>
+                <li>Input Line D0 : I/P0 </li>
+                <li>Input Line D1 : I/P1 </li>
+                <li>Input Line D2 : I/P2 </li>
+                <li>Input Line D3 : I/P3 </li>
+                <li>Input Line D4 : I/P4 </li>
+                <li>Input Line D5 : I/P5 </li>
+                <li>Input Line D6 : I/P6 </li>
+                <li>Input Line D7 : I/P7 </li>
+			</ul>
+			<h3> Outputs </h3>
+			<ul>
+				<li> Y : O/P6</li>
+			</ul>
+		</div>
+        <div ID="Operational_Panel">
+            <div class="Operation" tabindex="-1" id="No_Operation_Mode" onclick="ICBase_Mode = IC_Base_Mode.Show_Datasheet;alert('Please Select the IC-Base whose IC you want see.');">Show Datasheet</div>
+            <div class="Operation" tabindex="-1" id="No_Operation_Mode" onclick="ICBase_Mode = IC_Base_Mode.No_Operation_Mode;">Cancel</div>
+            <div class="Operation" tabindex="-1" id="" onclick=""></div>
+            <div class="Operation" tabindex="-1" id="Generate_Truth_Table" onclick="Control_Manager.prototype.Generate_Truth_Table('Truth_Table')">Generate Truth Table</div>
+            <div class="Operation" tabindex="-1" id="" onclick=""></div>
+            <div class="Operation" tabindex="-1" id="Debuge" onclick="Debuge_Mode = !Debuge_Mode; Control_Manager.prototype.DisplayGrid(); this.innerHTML = 'Debug Mode : <br/>' + (Debuge_Mode ? 'ON' : 'OFF');">Debug Mode</div>
+        </div>
+        <div ID="DELSimulator">
+			<canvas id="mycanvas"></canvas>
+		</div>
+        <div id="PopUp_Background"></div>
+        <div id="PopUp"></div>
+        
+        <div style="padding-left:50px" id="Truth_Table"></div>
+        <br><br>
+        <input type="button" value="Capture" onclick="TimingDiagram.Start_Timer();">
+        <input type="button" value="Stop Capture" onclick="TimingDiagram.Stop_Timer();">
+        <input type="button" value="Prev" onclick="TimingDiagram.Prev_Frame();">
+        <input type="button" value="Next" onclick="TimingDiagram.Next_Frame();">
+        <br>
+        <canvas id="TimingDiagram" height="600px" width= "1000px"></canvas>
+	</body>
 </html>

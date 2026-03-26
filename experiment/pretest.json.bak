@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Figure out the number of inputs and outputs in 8:1 Multiplexer",
+    "qid": 1,
+    "option_a": "1 input 8 outputs",
+    "option_b": "2 inputs 4 outputs",
+    "option_c": "8 inputs 1 output",
+    "option_d": "4 inputs 1 output",
+    "correct_option": "c"
+  },
+  {
+    "question": "Multiplexer has",
+    "qid": 2,
+    "option_a": "Many input one output",
+    "option_b": "Many input many output",
+    "option_c": "One input many output",
+    "option_d": "One input one output",
+    "correct_option": "a"
+  },
+  {
+    "question": "In 4:1 multiplexer state the number of select lines required?",
+    "qid": 3,
+    "option_a": "1",
+    "option_b": "2",
+    "option_c": "3",
+    "option_d": "4",
+    "correct_option": "b"
+  },
+  {
+    "question": "Select lines are used to select",
+    "qid": 4,
+    "option_a": "Input",
+    "option_b": "Output",
+    "option_c": "Both",
+    "option_d": "None of the above",
+    "correct_option": "a"
+  },
+  {
+    "question": "The abbreviation of multiplexer is ______.",
+    "qid": 5,
+    "option_a": "MPX",
+    "option_b": "MUX",
+    "option_c": "Both of the above",
+    "option_d": "None of the above",
+    "correct_option": "c"
+  }
+]
