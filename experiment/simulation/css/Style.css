@@ -1,0 +1,181 @@
+html, body 
+{
+    padding:0px;
+    margin:0px;
+}
+ol li {
+  margin-left: 2em;
+  display: list-item;
+  list-style: inside decimal-leading-zero;
+}
+#DELSimulator
+{
+    width:100%;
+    position:relative;
+    padding: 0px;
+    min-height:200px;
+    box-sizing:border-box;
+}
+#DELSimulator > #mycanvas
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.OutputPort
+{
+    /*background: #000;*/
+    position: absolute;
+}
+.BlackCircle
+{
+    background: #4682B4;
+    position: absolute;
+}
+.LED
+{
+    position: absolute;
+    background: #0f0;
+}
+.Pin
+{
+    display: block;
+    position: absolute;
+}
+.Pin:hover
+{
+    background: #000;
+}
+
+/*  Operational Panel    */
+#Operational_Panel
+{
+    display: table-cell;
+    padding: 20px;
+}
+
+.Operation
+{
+    height: 65px;
+    width: 75px;
+    display: block;
+    background: #cad0d3;
+    float: left;
+    margin:2px;
+    padding:10px;
+}
+.Operation:focus
+{
+    background: #a8b0b1;
+}
+
+/*  Seven Segment Display Style   */
+.Horizontal_Div
+{
+    height:11.24%;
+    /*background:#b2c99c;*/
+    color:#fff;
+    position:absolute;
+    width:51.02%;
+    text-align:center;
+    line-height:40px;
+}
+.Left_Arrow , .Right_Arrow
+{
+    position: absolute;
+    width: 28.294%;
+    right: -14.725%;
+    background: inherit;
+    height: 70.71%;
+    top: 12%;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+}
+.Left_Arrow 
+{
+    left: -14.725%;
+}
+.Vertical_Div
+{
+    height:28.09%;
+    /*background:#b2c99c;*/
+    color:#fff;
+    position:absolute;
+    width:20.41%;
+    text-align:center;
+    line-height:40px;
+}
+.Up_Arrow , .Down_Arrow
+{
+    position: absolute;
+    height: 28.294%;
+    bottom: -14.725%;
+    background: inherit;
+    width: 70.71%;
+    left: 12%;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+}
+.Up_Arrow 
+{
+    top: -14.725%;
+}
+
+/*  Pop-up     */
+#PopUp_Background
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    display: none;
+    background: #000;
+    opacity: 0.75;
+}
+#PopUp
+{
+    position: absolute;
+    display: none;
+    background: #EEE;
+    width: 50%;
+    height: 50%;
+    top:25%;
+    left: 25%;
+    clear: both;
+    /*
+    padding:20px;
+    */
+    border-radius: 5px;
+}
+
+
+/*    Table      */
+
+
+table
+{
+    border-collapse: collapse;
+}
+table, th, td
+{
+    border: 1px solid #000;
+}
+td, th
+{
+	font-size: 18px;
+	font-family: 'Times New Roman';
+    text-align: center;
+    padding:5px;
+}
+th 
+{
+    background-color: #4C50AF;
+    color: white;
+}
+
+tr:active {background-color: #999;}
+td:nth-child(odd) {background-color: #f2f2f2}

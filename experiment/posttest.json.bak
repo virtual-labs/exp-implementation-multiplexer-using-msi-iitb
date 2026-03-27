@@ -1,0 +1,47 @@
+[
+  {
+    "question": "Which is the major functioning responsibility of the multiplexing combinational circuit?",
+    "qid": 1,
+    "option_a": "Decoding the binary information",
+    "option_b": "Encoding the information",
+    "option_c": "Generation of selected path between multiple sources and a single destination",
+    "option_d": "All of the above",
+    "correct_option": "c"
+  },
+  {
+    "question": "If there are N numbers of select lines then state the numbers of input lines in the multiplexer?",
+    "qid": 2,
+    "option_a": "2N",
+    "option_b": "2^N",
+    "option_c": "2/N",
+    "option_d": "2N+1",
+    "correct_option": "b"
+  },
+  {
+    "question": "Which digital circuit acts as switch?",
+    "qid": 3,
+    "option_a": "Comparator",
+    "option_b": "Counter",
+    "option_c": "De-Multiplexer",
+    "option_d": "Multiplexer",
+    "correct_option": "d"
+  },
+  {
+    "question": "If select lines are S<sub>1</sub> S<sub>0</sub> = 11 then which of the input is selected by multiplexer?",
+    "qid": 4,
+    "option_a": "D1",
+    "option_b": "D2",
+    "option_c": "D3",
+    "option_d": "D0",
+    "correct_option": "c"
+  },
+  {
+    "question": "One application of a digital multiplexer is to facilitate",
+    "qid": 6,
+    "option_a": "Data generation",
+    "option_b": "Serial-to-parallel conversion",
+    "option_c": "Parity checking",
+    "option_d": "Data selector",
+    "correct_option": "d"
+  }
+]

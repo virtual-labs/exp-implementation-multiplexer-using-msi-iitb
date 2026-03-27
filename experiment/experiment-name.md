@@ -1,1 +1,1 @@
-## Experiment name
+## Implementation of 8:1 MUX using MSI ICs
