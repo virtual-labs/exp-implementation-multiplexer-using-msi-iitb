@@ -1,0 +1,1 @@
+To design and implement 8:1 MUX using IC-74LS153 and Verify its Truth Table.
